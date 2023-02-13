@@ -141,4 +141,26 @@ public class Solution {
         }
         return count;
     }
+
+    public void deque(){
+        Scanner in = new Scanner(System.in);
+
+        int n = in.nextInt();
+        int m = in.nextInt();
+        int arr[] = {5, 3, 5, 2, 3, 2};
+        int max = 0;
+
+        /*for (int i = 0; i < n; i++) {
+            arr[i] = in.nextInt();
+        }*/
+        for (int i = 0; i <= n - m; i++) {
+            Set set = new HashSet<>();
+            for (int j = i; j < 3 + i; j++) {
+                set.add(arr[j]);
+            }
+            if(max < set.size())
+                max = set.size();
+        }
+        System.out.println(max);
+    }
 }

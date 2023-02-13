@@ -72,6 +72,9 @@ public class Main {
         solution.java2DArray(arr);
         System.out.println("hey");*/
 
-        System.out.println(solution.primeCount(5000));
+//        System.out.println(solution.primeCount(5000));
+
+        solution.deque();
+
     }
 }
